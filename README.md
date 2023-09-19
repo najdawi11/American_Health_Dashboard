@@ -56,7 +56,7 @@ Git Pages
 
 Database Engineering: Edwin & Ronald
 
-ETL - includes filtering, sorting, dropping NaN, merging, concatinating, etc.
+ETL - includes filtering, sorting, dropping NaN, merging, concatinating, model testing, etc.
 
 Database Development (MySQL)
 
