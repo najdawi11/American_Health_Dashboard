@@ -1,89 +1,78 @@
 # American_Health_Dashboard
 
 Group 4 Proposal (American Health and Wellness Dashboard)
+
 Datasets:
 
- 2018 Release - 2015 : https://data.cdc.gov/resource/rja3-32tc.json
-
- 2019 Release - 2016 & 2017 : https://data.cdc.gov/resource/6vp6-wxuq.json
-
- 2020 Release - 2017 % 2018 : https://data.cdc.gov/resource/q8xq-ygsk.json
+1. 2022 Release - 2019 & 2020 : https://data.cdc.gov/resource/epbn-9bv3.json
  
- 2021 Release - 2018 & 2019 : https://data.cdc.gov/resource/q8ig-wwk9.json
+2. 2023 Release - 2020 & 2021 : https://data.cdc.gov/resource/eav7-hnsx.json
 
- 2022 Release - 2019 & 2020 : https://data.cdc.gov/resource/epbn-9bv3.json
+Goal of Project: 
 
- 2023 Release - 2020 & 2021 : https://data.cdc.gov/resource/eav7-hnsx.json
-
-Goal of Project: Using multi-year health data from the CDC to create visuals for the data.
-
+Using two-year health data from the CDC to create visuals for the data and using an ML model to predict the outcome
 
 Problem-Statement:
 
-
 Visualization of the data is currently focused towards simple monitoring and tracking. This presents a unique challenge for visualization and interactivity; the new dashboard will solve for this by providing:
 
+- Improved Interactivity and data insights.
+- Improved trend visualization featuring heat-mapping for data.
+- Healthcare and Mental Health Resource Needs:
+   * Insurance levels across the United States (create a dashboard that allows users to see the various areas of the US that have coverage and the density of coverage).
+   * Display general healthcare & mental health trends across the US.
 
-Improved Interactivity and data insights.
+Due to the heavy volume of data if we use all of the data points from the CDC (1 to 3 million datapoints per year), filtering on five (7) health data points and thirteen (13) states would be the best approach.
 
+Health data points:
+1. Cancer (except Skin)
+2. Coronary Heart Disease
+3. COPD
+4. Obesity
+5. Diabetes
+6. Health Insurance
+7. Annual Checkup
 
-Improved trend visualization featuring heat-mapping for data.
+Thirteen (13) states:
+1. Alabama
+2. Arizona
+3. Arkansas
+4. California
+5. Colorado
+6. Connecticut
+7. Delaware
+8. District of Columbia
+9. Georgia
+10. Hawaii
+11. Idaho
+12. Illinois
+13. Indiana
 
-
-Healthcare and Mental Health Resource Needs:
-
-
-Insurance levels across the United States (create a dashboard that allows users to see the various areas of the US that have coverage and the density of coverage).
-
-
-Display general healthcare & mental health trends across the US.
-
-
-Due to the heavy volume of data if we use all of the data points from the CDC, filtering on five (5) data points would be the best approach
-
-
-Diabetes
-
-Heart Disease
-
-Cancer
-
-Asthma
-
-Depression
-
-For the ML, using multi-model to determine the best model
+For Machine Learning, we'll be using the KNN model since we have two years of data for comparison.
 
 Role Assignments:
 
-Lead Developer: Masoud
 
-Overall Design, Structure, and Implementation
+*/ Lead Developer: Masoud
 
+- Overall Design, Structure, and Implementation
 
-Git Master – Nathir (Thursday)
+*/ Git Master – Nathir (Thursday)
 
-Set-up Master Repo
+- Set-up Master Repo
+- Settings: Collaborators
+- README
+- Git Pages
 
-Settings: Collaborators
+*/ Database Engineering: Edwin & Ronald
 
-README
+- ETL - includes extracting, filtering, sorting, dropping NaN, merging, concatinating, model testing, etc.
+- Database Development (MySQL)
 
-Git Pages
+*/ Flask (Nathir – Backup Dev)
 
+*/ Front-End Development Team: Nathir, Edwin, Ronald, Masoud
 
-Database Engineering: Edwin & Ronald
+- User-Interface and Design (Figma front-end design)
 
-ETL
-
-Database Development (MySQL)
-
-
-Flask (Nathir – Backup Dev)
-
-
-Front-End Development Team: Nathir, Edwin, Ronald, Masoud,
-
-User-Interface and Design (Figma front-end design)
-
-Javascript, CSS (bootstrap), HTML
+- Javascript, CSS (bootstrap), HTML, Python, Pandas
