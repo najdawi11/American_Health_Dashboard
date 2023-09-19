@@ -1,0 +1,93 @@
+
+  
+  /* Style the charts */
+  #pie, #bar {
+   
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the map container */
+  #map {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Style the pie chart slices */
+  #pie path {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #pie path:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Style the bar chart bars */
+  #bar rect {
+    transition: width 0.3s ease-in-out;
+  }
+  
+  #bar rect:hover {
+    width: 110%;
+  }
+  
+  /* Style the text inside the bar chart bars */
+  #bar .value {
+    fill: #333;
+    font-size: 20px;
+  }
+  
+  /* Style the leaflet popup */
+  .leaflet-popup-content-wrapper {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .leaflet-popup-content {
+    padding: 10px;
+  }
+  
+  /* Style the leaflet popup close button */
+  .leaflet-popup-close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  /* Style the leaflet popup close button on hover */
+  .leaflet-popup-close-button:hover {
+    color: #333;
+  }
+  
+  /* Optional: Customize the colors of charts and other elements */
+  /* Example: */
+  #pie path:nth-child(1) {
+    fill: #ffa500; /* Orange */
+  }
+  
+  #pie path:nth-child(2) {
+    fill: #ff6347; /* Tomato */
+  }
+  
+  #pie path:nth-child(3) {
+    fill: #4169e1; /* Royal Blue */
+  }
+  
+  #pie path:nth-child(4) {
+    fill: #228b22; /* Forest Green */
+  }
+  
+  #pie path:nth-child(5) {
+    fill: #da70d6; /* Orchid */
+  }
+  
+  #dataDisplay {
+    height: 560px; /* Adjust this height to your preference */
+    overflow-y: scroll;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Health Dashboard</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- Custom CSS (Assumes you have a separate CSS file for custom styles) -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Plotly CSS -->
+    <link rel="stylesheet" href="https://cdn.plot.ly/plotly-latest.css">
+
+    <!-- Plotly JS -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- ... -->
+
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body style="font-family: 'Roboto', sans-serif;">
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1><i class="fas fa-stethoscope mr-3"></i>American Health Dashboard</h1>
+                <p class="lead">Explore the Dataset Interactively</p>
+                <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mt-3 mb-3">
+                <div class="well pl-3 pr-3">
+                    <h5>Select a Condition:</h5>
+
+
+
+
+
+                    
+                    <select id="selDataset" class="form-control" onchange="optionChanged(this.value)"></select>
+                </div>
+                <div class="panel panel-primary mt-4">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">All Data (Descending)</h3>
+                    </div>
+                    <div id="dataDisplay" class="panel-body"></div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="pie"></div>
+                        <h5>Pie chart:</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="bar"></div>
+                        <h5>bar Chart:</h5>
+                    </div>
+                </div>
+                <!-- <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div id="line"></div>
+                        <h5>line Chart:</h5>
+                    </div>
+                </div> -->
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div id="map" style="height: 400px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <!-- Plotly JS -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- JavaScript logic -->
+    <script src="logic.js"></script>
+</body>
+</html>
