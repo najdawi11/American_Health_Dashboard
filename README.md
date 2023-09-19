@@ -24,15 +24,31 @@ Insurance levels across the United States (create a dashboard that allows users 
 Display general healthcare & mental health trends across the US.
 
 
-Due to the heavy volume of data if we use all of the data points from the CDC, filtering on five (5) data points would be the best approach
+Due to the heavy volume of data if we use all of the data points from the CDC, filtering on five (7) health data points and thirteen (13) states would be the best approach
 
-Cancer (except Skin)
-Coronary Heart Disease
-COPD
-Obesity
-Diabetes
-Health Insurance
-Annual Checkup
+health data points:
+1. Cancer (except Skin)
+2. Coronary Heart Disease
+3. COPD
+4. Obesity
+5. Diabetes
+6. Health Insurance
+7. Annual Checkup
+
+thirteen (13) states:
+1. Alabama
+2. Arizona
+3. Arkansas
+4. California
+5. Colorado
+6. Connecticut
+7. Delaware
+8. District of Columbia
+9. Georgia
+10. Hawaii
+11. Idaho
+12. Illinois
+13. Indiana
 
 For Machine Learning, we'll be using the KNN model since we have few datapoints as comparison.
 
