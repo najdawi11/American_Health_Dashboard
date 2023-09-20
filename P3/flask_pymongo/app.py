@@ -9,7 +9,7 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 client = MongoClient('mongodb://localhost:27017/')
 db = client['Project3']
-collection = db['data1']
+collection = db['p4']
 
 @app.route('/')
 def home():

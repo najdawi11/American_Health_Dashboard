@@ -10,6 +10,8 @@
   
   /* Style the map container */
   #map {
+    width: 100%;
+    height: 500px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
