@@ -1,5 +1,0 @@
-# tensorflow
-flask
-scikit-learn
-joblib
-pandas
