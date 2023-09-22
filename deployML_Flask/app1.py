@@ -34,22 +34,5 @@ def get_cdc_data23():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
-@app.route('/api/cdc-data22/dataframe')
-def get_cdc_data22_dataframe():
-    try:
-        # Query the data from the 2022 dataset
-        results1 = client.get(dataset_id22, limit=500000)
-        data1 = results1[:10]
-
-        # Convert the data to a Pandas DataFrame
-        df = pd.DataFrame(data1)
-
-        # Return the DataFrame as JSON
-        return df.to_json(orient='records'), 200
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
 if __name__ == '__main__':
     app.run(debug=True)
